@@ -26,7 +26,7 @@ jobs:
       - uses: actions/setup-node@v1
       - run: npm install --save -g md5-file
       - name: Generate checksum
-        run: node getchecksums.js
+        run: node getchecksum.js
       - name: Print checksums
         run: |
           cat checksum.txt
