@@ -23,13 +23,14 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-      - name: Generate checksum
-        uses: jmgilman/actions-generate-checksum@v1
+      - uses: actions/setup-node@v2
         with:
-          method: md5
-          patterns: |
-            files/*
+          node-version: '14'
+      - run: npm install
+      - run: npm test
+      - run: npm install --save -g md5-file
+      - name: Generate checksum
+        run: node getchecksums.js
       - name: Print checksums
         run: |
           cat checksum.txt
