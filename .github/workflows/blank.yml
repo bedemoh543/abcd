@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
-      - run: npm install --save -g md5-file
+      - run: npm install --save md5-file
       - name: Generate checksum
         run: node getchecksum.js
       - name: Print checksums
