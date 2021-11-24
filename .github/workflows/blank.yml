@@ -27,8 +27,9 @@ jobs:
       - name: Generate checksum
         uses: jmgilman/actions-generate-checksum@v1
         with:
+          method: md5
           patterns: |
             *
-      - name: Push
+      - name: Print checksums
         run: |
           cat checksum.txt
