@@ -1,4 +1,17 @@
 {
 	"a.txt": "c4ca4238a0b923820dcc509a6f75849b",
-	"b.txt": "c81e728d9d4c2f636f067f89cc14862c"
+	"b.txt": "c81e728d9d4c2f636f067f89cc14862c",
+	"data": {
+		"dump.txt": "8bc807563b57dfc323c7c276ec0c1154"
+	},
+	"res": {
+		"img": {
+			"new.png": "2ad98ab7c3221093ef1d2e2abd255b55",
+			"wallpaper.png": "c9474cc2e2b2786bab01573ad7baeb29"
+		},
+		"js": {
+			"api.js": "9d5ed678fe57bcca610140957afab571",
+			"call.js": "7fc56270e7a70fa81a5935b72eacbe29"
+		}
+	}
 }
