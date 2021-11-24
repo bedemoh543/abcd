@@ -27,12 +27,9 @@ jobs:
       - run: npm install --save md5-file
       - name: Generate checksum
         run: node getchecksum.js
-      - name: Print checksums
-        run: |
-          cat output.json
       - name: Update resources
         uses: test-room-7/action-update-file@v1
         with:
             file-path: output.json
-            commit-msg: Update resources
+            commit-msg: Update output.json
             github-token: ${{ secrets.GITHUB_TOKEN }}
