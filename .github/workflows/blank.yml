@@ -29,7 +29,7 @@ jobs:
         with:
           method: md5
           patterns: |
-            *
+            files/*
       - name: Print checksums
         run: |
           cat checksum.txt
